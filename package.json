@@ -1,0 +1,24 @@
+{
+  "name": "show-love",
+  "version": "1.0.0",
+  "dependencies": {
+    "twilio": "^3.81.0"
+  },
+  "main": "node-main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarquisTheCoder/show-love.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarquisTheCoder/show-love/issues"
+  },
+  "homepage": "https://github.com/MarquisTheCoder/show-love#readme",
+  "description": ""
+}
