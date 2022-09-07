@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show love</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/main.js"></script>
+</head>
+<body>
+
+    <section class="message-creator" id="message-creator">
+        <h3>Show Love</h3>
+
+        <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
+
+        <select name="words-of-encouragement" id="words-of-encouragement">
+            <option value="1">Someone out there is hoping you have a good day!</option>
+            <option value="2">Someone out there is wishing you the best!</option>
+            <option value="3">Someone out there thinks your cute! ;)</option>
+            <option value="4">Someone thinks you'll be successful!</option>
+        </select>
+
+        <button id="send-btn">Send Love</button>
+
+        <span id="warning-message">
+            <i>this message may be marked as spam</i>
+        </span>
+
+    </section>
+</body>
+</html>
