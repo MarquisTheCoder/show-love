@@ -8,12 +8,22 @@
  File Description:
  */
 
-const twilio = require('twilio');
-const authJson = require('./auth.json');
-const fs = require('fs');
+// const twilio = require('twilio');
+// const authJson = require('./auth.json');
+// const fs = require('fs');
+//
+// /*initializes the twilio client*/
+// let client = new twilio(authJson.SID, authJson.JWT);
+//
+//
 
-/*initializes the twilio client*/
-let client = new twilio(authJson.SID, authJson.JWT);
+let express = require('express');
+let app = express();
 
+app.post('/api/foo', foo);
 
+function foo(req, res){
+     res.send('hello world');
+}
 
+app.listen(63342);

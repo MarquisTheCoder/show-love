@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,10 +30,10 @@ nav{
 }
 
 nav > #logo{
-    font-family: 'Great Vibes', cursive;
-    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
     background-color: #00000000;
-    color: #eaded9;
+    color: #eaded989;
     font-weight: bolder;
     padding: 10px;
     border-radius: 8px;
