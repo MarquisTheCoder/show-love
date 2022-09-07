@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
     box-sizing: border-box;
@@ -19,9 +20,26 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
+nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
 
+}
+
+nav > #logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    background-color: #00000000;
+    color: #eaded9;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 6vw;
+}
 .message-creator{
     display: flex;
     flex-direction: column;
@@ -29,7 +47,8 @@ body {
     height: 45vh;
     width: 55vw;
     margin: 0 auto;
-    background-color: #000000b1;
+    background-color: #ca786b60;
+    color: white;
     border-radius: 30px;
     padding: 3em 1.5em 3em 1.5em;
     text-align: center;
@@ -43,11 +62,76 @@ body {
             42px 45px 326px -6px rgba(0, 0, 0, 0.35)
 ;
 }
-
+.container{
+    display: flex;
+    flex-flow: column wrap;
+}
 input{
-    color: white;
+    width: 30vw;
+    color: #b53b53;
     border-width: 0;
     border-radius: 6px;
-    background-color: rgba(1,1,1,0.86);
+    background-color: #f2b7b4;
     padding: 15px 10px;
+    box-shadow:
+            1px 1px 7.6px -6px rgba(0, 0, 0, 0.09),
+            2.3px 2.4px 17.6px -6px rgba(0, 0, 0, 0.131),
+            4.1px 4.4px 31.5px -6px rgba(0, 0, 0, 0.161),
+            6.7px 7.2px 52.3px -6px rgba(0, 0, 0, 0.189),
+            11.1px 11.9px 86.2px -6px rgba(0, 0, 0, 0.219),
+            19.4px 20.8px 150.7px -6px rgba(0, 0, 0, 0.26),
+            42px 45px 326px -6px rgba(0, 0, 0, 0.35)
+;
+}
+
+.space{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+select{
+    width: 30vw;
+    color: #b53b53;
+    border-width: 0;
+    border-radius: 6px;
+    background-color: #f2b7b4;
+    padding: 15px 10px;
+    box-shadow:
+            1px 1px 7.6px -6px rgba(0, 0, 0, 0.09),
+            2.3px 2.4px 17.6px -6px rgba(0, 0, 0, 0.131),
+            4.1px 4.4px 31.5px -6px rgba(0, 0, 0, 0.161),
+            6.7px 7.2px 52.3px -6px rgba(0, 0, 0, 0.189),
+            11.1px 11.9px 86.2px -6px rgba(0, 0, 0, 0.219),
+            19.4px 20.8px 150.7px -6px rgba(0, 0, 0, 0.26),
+            42px 45px 326px -6px rgba(0, 0, 0, 0.35)
+;
+}
+
+button{
+    padding: 15px 10px;
+    border-radius: 6px;
+    border-width: 0;
+    width: 130px;
+    margin: 0 30% 0 30%;
+    background: linear-gradient(#9a395a, #ed165a );
+    color: white;
+    box-shadow:
+            1px 1px 7.6px -6px rgba(0, 0, 0, 0.09),
+            2.3px 2.4px 17.6px -6px rgba(0, 0, 0, 0.131),
+            4.1px 4.4px 31.5px -6px rgba(0, 0, 0, 0.161),
+            6.7px 7.2px 52.3px -6px rgba(0, 0, 0, 0.189),
+            11.1px 11.9px 86.2px -6px rgba(0, 0, 0, 0.219),
+            19.4px 20.8px 150.7px -6px rgba(0, 0, 0, 0.26),
+            42px 45px 326px -6px rgba(0, 0, 0, 0.35)
+;
+}
+button:hover{
+    cursor: grab;
+    background: linear-gradient(#ed165a,#9a395a );
+}
+
+#warning-message{
+    width: 100vw;
+    text-align: center;
+    color: #f0b78c;
 }

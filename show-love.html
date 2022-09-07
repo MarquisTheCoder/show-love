@@ -7,13 +7,14 @@
     <script src="javascript/main.js"></script>
 </head>
 <body>
-
+    <nav>
+        <span id="logo">Show Love</span>
+    </nav>
     <section class="message-creator" id="message-creator">
-        <h3>Show Love</h3>
+        <section id="container">
+            <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
 
-        <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
-
-        <select name="words-of-encouragement" id="words-of-encouragement">
+        <select class="space"name="words-of-encouragement" id="words-of-encouragement">
             <option value="1">Someone out there is hoping you have a good day!</option>
             <option value="2">Someone out there is wishing you the best!</option>
             <option value="3">Someone out there thinks your cute! ;)</option>
@@ -22,10 +23,19 @@
 
         <button id="send-btn">Send Love</button>
 
-        <span id="warning-message">
-            <i>this message may be marked as spam</i>
-        </span>
+        </section>
+
+
+
+
 
     </section>
+
+    <footer>
+
+         <div id="warning-message">
+            <i>this message may be marked as spam</i>
+        </div>
+    </footer>
 </body>
 </html>
