@@ -2,10 +2,10 @@
   "name": "show-love",
   "version": "1.0.0",
   "dependencies": {
+    "express": "^4.18.1",
     "twilio": "^3.81.0"
   },
   "main": "node-main.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
