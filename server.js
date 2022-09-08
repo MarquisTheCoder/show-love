@@ -13,6 +13,7 @@ require('dotenv').config();
 /*initializes the twilio client*/
 let sid = process.env.TWILIO_ACC_SID;
 let jwt = process.env.TWILIO_ACC_JWT;
+
 console.log(sid);
 console.log(jwt);
 const client = require('twilio')(sid, jwt);
