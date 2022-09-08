@@ -17,13 +17,27 @@
     <section class="message-creator" id="message-creator">
         <section id="container">
             <form method="POST">
-                <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
+
+                <label for="phone-number" id="phone-number-label" name="phone-number-label"></label>
+
+                <input id="phone-number" name="phone-number" type="tel"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
+
                 <select class="space"name="words-of-encouragement" id="words-of-encouragement">
-                    <option value="1">Someone out there is hoping you have a good day!</option>
-                    <option value="2">Someone out there is wishing you the best!</option>
-                    <option value="3">Someone out there thinks your cute! ;)</option>
-                    <option value="4">Someone thinks you'll be successful!</option>
+
+                    <option value="Someone out there is hoping you have a god day!">
+                        Someone out there is hoping you have a good day!</option>
+
+                    <option value="Someone out there is wishing you the best!">
+                        Someone out there is wishing you the best!</option>
+
+                    <option value="Someone out there thinks your cute">
+                        Someone out there thinks your cute! ;)</option>
+
+                    <option value="Someone out there thinks you'll be successful!">
+                        Someone thinks you'll be successful!</option>
                 </select>
+
                 <button id="send-btn" type="submit">Send Love</button>
             </form>
         </section>
@@ -37,5 +51,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="javascript/main.js"></script>
+    <script>
+
+        window.onload = () => {
+             document.getElementById('send-btn').onclick = () =>{
+                  setTimeout(() => {
+                       window.location.reload();
+                  }, 1000 * 2);
+             }
+        }
+
+    </script>
 </body>
 </html>

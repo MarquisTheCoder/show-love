@@ -1,4 +1,5 @@
 
+require('dotenv').config();
 /*
  Creator: Deshawn Marquis, Williams,
  GitHub Profile: https://github.com/MarquisTheCoder,
@@ -8,14 +9,17 @@
  File Description:
  */
 
-// const twilio = require('twilio');
-// const authJson = require('./auth.json');
-// const fs = require('fs');
-//
-// /*initializes the twilio client*/
-// let client = new twilio(authJson.SID, authJson.JWT);
-//
-//
+
+/*initializes the twilio client*/
+let sid = process.env.TWILIO_ACC_SID;
+let jwt = process.env.TWILIO_ACC_JWT;
+
+const twilio = require('twilio');
+
+
+const client = new twilio(sid, jwt);
+
+
 
 let express = require('express');
 let bodyParser = require('body-parser');
@@ -25,7 +29,7 @@ let app  = express();
 app.use(express.static('public'));
 
 /*get our server to use the body parser*/
-app.use(bodyParser.json({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(3000, () => {
      console.log('application is starting on port 3000');
@@ -38,4 +42,11 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
      console.log(req.body);
+     res.send('ok');
+     client.messages.create({
+               body: req.body['words-of-encouragement'],
+               from: '+18146125149',
+               to: `+${req.body['phone_number']}`
+                  })
+          .then(message => console.log(req.body))
 })
