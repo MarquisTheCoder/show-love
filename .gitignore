@@ -1,1 +1,4 @@
 ./auth.json
+*.idea
+*.iml
+./node_modules

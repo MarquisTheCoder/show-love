@@ -5,7 +5,7 @@
     <title>Show love</title>
     <meta name="description" content="sending love to secret admiree">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
 
 </head>
@@ -16,22 +16,20 @@
 
     <section class="message-creator" id="message-creator">
         <section id="container">
-            <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
-
-        <select class="space"name="words-of-encouragement" id="words-of-encouragement">
-            <option value="1">Someone out there is hoping you have a good day!</option>
-            <option value="2">Someone out there is wishing you the best!</option>
-            <option value="3">Someone out there thinks your cute! ;)</option>
-            <option value="4">Someone thinks you'll be successful!</option>
-        </select>
-
-        <button id="send-btn">Send Love</button>
-
+            <form method="POST">
+                <input id="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Number you want to send to">
+                <select class="space"name="words-of-encouragement" id="words-of-encouragement">
+                    <option value="1">Someone out there is hoping you have a good day!</option>
+                    <option value="2">Someone out there is wishing you the best!</option>
+                    <option value="3">Someone out there thinks your cute! ;)</option>
+                    <option value="4">Someone thinks you'll be successful!</option>
+                </select>
+                <button id="send-btn" type="submit">Send Love</button>
+            </form>
         </section>
     </section>
 
     <footer>
-
          <div id="warning-message">
             <i>this message may be marked as spam</i>
         </div>
