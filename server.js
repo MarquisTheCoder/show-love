@@ -17,10 +17,6 @@ console.log(sid);
 console.log(jwt);
 const client = require('twilio')(sid, jwt);
 
-
-
-
-
 let express = require('express');
 let bodyParser = require('body-parser');
 let app  = express();
