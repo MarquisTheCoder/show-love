@@ -45,12 +45,10 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-     console.log(req.body);
-     
+     console.log(req.body + '\n\n');
      console.log('sending message to ' + '+' + req.body.phone_number);
      sendTextMessage('+18146125149',
                      req.body.phone_number,
                      req.body.choice);
-
      res.sendFile('/Users/macbookpro/IdeaProjects/show-love/index.html');
 })
