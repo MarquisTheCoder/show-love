@@ -18,7 +18,7 @@
 <hr>
 
 
-[![showcase image](https://github.com/MarquisTheCoder/marcus-aurelius-memorabilia/blob/main/images/marcus.png)](https://marquisthecoder.github.io/marcus-aurelius-memorabilia/)
+![showcase image](https://github.com/MarquisTheCoder/show-love/blob/main/imgs/show_love.png)
 <hr>
 
 <div align="center"> 
